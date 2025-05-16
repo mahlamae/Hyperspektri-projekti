@@ -1,0 +1,336 @@
+#container {
+      position: relative;
+      width: 900px;
+      height: 380px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+      background-color: #f9f9f9;
+    }
+    #sample {
+      position: absolute;
+      width: 160px;
+      height: 120px;
+      top: 135px;
+      left: 100px;
+      transition: left 2s ease-in-out, top 2s ease-in-out;
+    }
+    #camera {
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      top: 95px;
+      left: 420px;
+    }
+    #valoviiva {
+      position: absolute;
+      width: 100px;
+      height: 70px;
+      top: 100px;
+      left: 440px;
+      transition: top 2s ease-in-out;
+    }
+    #hsicamera {
+      position: absolute;
+      width: 90px;
+      height: 95px;
+      top: 110px;
+      left: 395px;
+    }
+    #kuutio {
+      position: absolute;
+      width: 150px;
+      height: 130px;
+      top: 40px;
+      left: 550px;
+    }
+    #spektri2 {
+      position: absolute;
+      width: 130px;
+      height: 110px;
+      top: 30px;
+      left: 730px;
+    }
+    #viiva {
+      position: absolute;
+      width: 45px;
+      height: 10px;
+      top: 145px;
+      left: 500px;
+    }
+#buttonWrapper {
+  position: relative;
+  width: 100%;
+  text-align: center; /* keskittää nappien sisällön vaakasuunnassa */
+  margin-top: 20px;
+}
+
+#startButton, #continueButton, #takaisinButton {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+#Spektroskopiainfo, #Hyperspektrikamerainfo {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  width: 320px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 280px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBall1 {
+  position: absolute;
+  left: 130px; /* hieman ennen kameraa */
+  top: 110px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBall2 {
+  position: absolute;
+  left: 430px; /* hieman ennen kameraa */
+  top: 65px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBox1 {
+  position: absolute;
+  top: -45px;
+  left: -50px;
+  width: 100px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 260px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBox2 {
+  position: absolute;
+  top: -35px;
+  left: 160px;
+  width: 200px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 260px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBall3 {
+  position: absolute;
+  left: 545px; /* hieman ennen kameraa */
+  top: 90px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBox3 {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  width: 250px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 260px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBall4 {
+  position: absolute;
+  left: 465px; /* hieman ennen kameraa */
+  top: 175px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBox4 {
+  position: absolute;
+  top: -50px;
+  left: 110px;
+  width: 300px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 260px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBallhsi {
+  position: absolute;
+  left: 425px; /* hieman ennen kameraa */
+  top: 85px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBoxhsi {
+  position: absolute;
+  top: -55px;
+  left: -60px;
+  width: 100px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBallkuutio {
+  position: absolute;
+  left: 630px; /* hieman ennen kameraa */
+  top: 170px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBoxkuutio {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  width: 220px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px;  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+#infoBallspektri {
+  position: absolute;
+  left: 780px; /* hieman ennen kameraa */
+  top: 140px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* piilotettu alussa */
+}
+
+#infoBoxspektri {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  width: 120px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px;  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
+/* Näytä laatikko kun hiiri on pallon päällä */
+#infoBall1:hover #infoBox1,
+#infoBall2:hover #infoBox2,
+#infoBall3:hover #infoBox3,
+#infoBall4:hover #infoBox4,
+#infoBallhsi:hover #infoBoxhsi,
+#infoBallkuutio:hover #infoBoxkuutio,
+#infoBallspektri:hover #infoBoxspektri {
+  display: block;
+}
