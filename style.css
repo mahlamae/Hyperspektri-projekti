@@ -42,6 +42,15 @@
       height: 130px;
       top: 40px;
       left: 550px;
+      transition: left 2s ease-in-out, top 2s ease-in-out;
+    }
+    #kuutio2 {
+      position: absolute;
+      width: 150px;
+      height: 130px;
+      top: 140px;
+      left: 90px;
+      transition: left 2s ease-in-out, top 2s ease-in-out;
     }
     #spektri2 {
       position: absolute;
@@ -49,6 +58,14 @@
       height: 110px;
       top: 30px;
       left: 730px;
+      transition: left 2s ease-in-out, top 2s ease-in-out;
+    }
+    #spektri_molemmat {
+      position: absolute;
+      width: 165px;
+      height: 140px;
+      top: 110px;
+      left: 270px;
     }
     #viiva {
       position: absolute;
@@ -70,11 +87,65 @@
   font-size: 14px;
 }
 
+#OhjeetBox {
+  position: absolute;
+  top: 120px;
+  left: 400px;
+  width: 220px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+
 #Spektroskopiainfo, #Hyperspektrikamerainfo {
   position: absolute;
   top: 15px;
   left: 35px;
   width: 320px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 280px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+#AnalyysiInfo {
+  position: absolute;
+  top: 70px;
+  left: 480px;
+  width: 320px;
+  background-color: #f0f8ff; 
+  border: 1.5px solid #0077cc;  
+  border-radius: 12px;    
+  padding: 16px; 
+  width: 280px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  font-family: "Segoe UI", sans-serif; 
+  font-size: 12px;    
+  line-height: 1.2; 
+  color: #333;
+  display: none;
+  z-index: 10;
+}
+#infoBoxReferences {
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  width: 400px;
   background-color: #f0f8ff; 
   border: 1.5px solid #0077cc;  
   border-radius: 12px;    
@@ -121,14 +192,13 @@
 
 #infoBox1 {
   position: absolute;
-  top: -45px;
+  top: -55px;
   left: -50px;
-  width: 100px;
+  width: 80px;
   background-color: #f0f8ff; 
   border: 1.5px solid #0077cc;  
   border-radius: 12px;    
-  padding: 16px; 
-  width: 260px;   
+  padding: 16px;   
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
   font-family: "Segoe UI", sans-serif; 
   font-size: 12px;    
